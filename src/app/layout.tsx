@@ -25,15 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
-          <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-            <Link href="/" className="text-lg font-semibold tracking-tight text-bronze">
+      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+        <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
+          <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
+            <Link href="/" className="font-semibold tracking-tight">
               Cash Count
             </Link>
-            <div className="flex gap-6 text-sm text-white/60">
+            <div className="flex gap-6 text-sm text-muted">
               <Link href="/privacy" className="transition-colors hover:text-white">
                 Privacy
               </Link>
@@ -44,10 +42,10 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main>{children}</main>
+        <main className="min-h-[calc(100vh-130px)]">{children}</main>
 
-        <footer className="border-t border-white/10 py-8 text-center text-sm text-white/40">
-          &copy; {new Date().getFullYear()} Cash Count. All rights reserved.
+        <footer className="border-t border-border px-6 py-8 text-center text-sm text-muted">
+          &copy; {new Date().getFullYear()} Cash Count
         </footer>
       </body>
     </html>

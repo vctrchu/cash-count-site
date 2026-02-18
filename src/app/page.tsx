@@ -1,50 +1,70 @@
+const DENOMINATION_COLORS = [
+  "#CDB38B",
+  "#CD5C5C",
+  "#3CB371",
+  "#9370DB",
+  "#87CEEB",
+];
+
+const FEATURES = [
+  {
+    title: "100% Private",
+    description: "All data stays on your device. No accounts, no analytics, no tracking.",
+    color: DENOMINATION_COLORS[0],
+  },
+  {
+    title: "Multi-Currency",
+    description: "Support for multiple currencies with customizable denominations.",
+    color: DENOMINATION_COLORS[2],
+  },
+  {
+    title: "Pro Features",
+    description: "Session history, custom denominations, and more with Cash Count Pro.",
+    color: DENOMINATION_COLORS[3],
+  },
+];
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center px-6">
-      <section className="flex max-w-3xl flex-col items-center gap-6 py-24 text-center md:py-32">
-        <h1 className="text-5xl font-bold tracking-tight md:text-6xl">
+    <div className="mx-auto max-w-3xl px-6">
+      <section className="flex flex-col items-center gap-4 py-20 text-center md:py-28">
+        <p className="text-sm font-medium tracking-[0.2em] uppercase text-muted">
+          Cash Counting App
+        </p>
+        <h1 className="font-mono text-6xl font-bold tracking-tight md:text-7xl">
           Cash Count
         </h1>
-        <p className="text-xl text-bronze md:text-2xl">
+        <p className="mt-2 text-lg text-muted">
           Count faster. Count smarter.
         </p>
-        <p className="max-w-lg text-lg text-white/60">
-          A simple, private cash counting app. No accounts, no cloud, no tracking.
-          Your money stays your business.
+        <p className="max-w-md text-sm leading-relaxed text-subtle">
+          No accounts, no cloud, no tracking. Your money stays your business.
         </p>
         <a
           href="https://apps.apple.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 rounded-full bg-bronze px-8 py-3 text-sm font-semibold text-[#0a0a0a] transition-opacity hover:opacity-90"
+          className="mt-6 rounded-xl bg-white/10 px-6 py-3 text-sm font-medium transition-colors hover:bg-white/20"
         >
           Download on the App Store
         </a>
       </section>
 
-      <section className="grid w-full max-w-4xl gap-6 pb-24 md:grid-cols-3">
-        <FeatureCard
-          title="100% Private"
-          description="All data stays on your device. No accounts, no analytics, no tracking."
-        />
-        <FeatureCard
-          title="Multi-Currency"
-          description="Support for multiple currencies with customizable denominations."
-        />
-        <FeatureCard
-          title="Pro Features"
-          description="Unlock session history, custom denominations, and more with Cash Count Pro."
-        />
+      <section className="grid gap-3 pb-20 md:grid-cols-3">
+        {FEATURES.map((feature) => (
+          <div
+            key={feature.title}
+            className="relative overflow-hidden rounded-2xl border border-border bg-surface p-5"
+          >
+            <div
+              className="absolute left-0 top-0 h-full w-[3px]"
+              style={{ backgroundColor: feature.color }}
+            />
+            <h3 className="mb-1.5 text-sm font-semibold">{feature.title}</h3>
+            <p className="text-sm leading-relaxed text-muted">{feature.description}</p>
+          </div>
+        ))}
       </section>
-    </div>
-  );
-}
-
-function FeatureCard({ title, description }: { title: string; description: string }) {
-  return (
-    <div className="rounded-2xl border border-white/10 p-6">
-      <h3 className="mb-2 text-lg font-semibold text-bronze">{title}</h3>
-      <p className="text-sm leading-relaxed text-white/60">{description}</p>
     </div>
   );
 }
