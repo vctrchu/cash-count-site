@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - Cash Count",
+  title: "Terms of Service - Nota",
 };
 
 export default function TermsOfService() {
@@ -15,7 +15,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="mb-3 text-base font-semibold text-white">1. Acceptance of Terms</h2>
           <p>
-            By downloading, installing, or using Cash Count (&ldquo;the App&rdquo;), you agree to be
+            By downloading, installing, or using Nota (&ldquo;the App&rdquo;), you agree to be
             bound by these Terms and Conditions. If you do not agree, do not use the App.
           </p>
         </section>
@@ -23,7 +23,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="mb-3 text-base font-semibold text-white">2. Description of Service</h2>
           <p>
-            Cash Count is a mobile application that helps users count cash denominations. The App
+            Nota is a mobile application that helps users count cash denominations. The App
             stores all data locally on your device.
           </p>
         </section>
@@ -31,7 +31,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="mb-3 text-base font-semibold text-white">3. Subscriptions and Billing</h2>
           <p className="mb-3">
-            The App offers optional paid subscriptions (&ldquo;Cash Count Pro&rdquo;) that unlock
+            The App offers optional paid subscriptions (&ldquo;Nota Pro&rdquo;) that unlock
             additional features. Subscriptions are billed through Apple&apos;s App Store. By
             purchasing a subscription, you agree to the following:
           </p>
@@ -51,7 +51,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="mb-3 text-base font-semibold text-white">4. Intellectual Property</h2>
           <p>
-            The App and its original content, features, and functionality are owned by Cash Count and
+            The App and its original content, features, and functionality are owned by Nota and
             are protected by copyright, trademark, and other intellectual property laws. You may not
             copy, modify, distribute, or reverse-engineer any part of the App.
           </p>
@@ -80,7 +80,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="mb-3 text-base font-semibold text-white">7. Limitation of Liability</h2>
           <p>
-            To the maximum extent permitted by law, Cash Count and its developers shall not be liable
+            To the maximum extent permitted by law, Nota and its developers shall not be liable
             for any indirect, incidental, special, consequential, or punitive damages arising from
             your use of the App, including but not limited to errors in cash counting calculations.
           </p>

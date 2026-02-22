@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Cash Count",
+  title: "Privacy Policy - Nota",
 };
 
 export default function PrivacyPolicy() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="mb-3 text-base font-semibold text-white">1. Introduction</h2>
           <p>
-            Cash Count (&ldquo;the App&rdquo;) is committed to protecting your privacy. This Privacy
+            Nota (&ldquo;the App&rdquo;) is committed to protecting your privacy. This Privacy
             Policy explains what information we collect, how we use it, and your rights regarding
             your data.
           </p>
@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="mb-3 text-base font-semibold text-white">2. Information We Collect</h2>
           <p className="mb-3">
-            <strong className="text-white">Cash Count does not collect personal information.</strong>{" "}
+            <strong className="text-white">Nota does not collect personal information.</strong>{" "}
             The App is designed with privacy in mind:
           </p>
           <ul className="list-none space-y-2 border-l-2 border-border pl-4">
