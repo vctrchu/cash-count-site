@@ -49,7 +49,7 @@ export default function Home() {
           No accounts, no cloud, no tracking. Your money stays your business.
         </p>
         <a
-          href="https://apps.apple.com"
+          href="https://apps.apple.com/ca/app/nota/id6759315830"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-8 py-3.5 text-base font-medium rounded-full border border-[#262626] bg-[#121212] hover:bg-[#1a1a1a] transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]"
