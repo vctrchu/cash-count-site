@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Shield, Globe, Sparkles } from "lucide-react";
 
 const SCREENSHOTS = [
   { src: "/screenshots/01.png", title: "The Fastest Way to Count Cash", subtitle: "Count any register in under 60 seconds" },
@@ -14,14 +15,17 @@ const FEATURES = [
   {
     title: "100% Private",
     description: "All data stays on your device. No accounts, no analytics, no tracking. Your financial data is yours alone.",
+    icon: Shield,
   },
   {
     title: "Multi-Currency",
     description: "Support for multiple currencies with customizable denominations. Count whatever cash you have.",
+    icon: Globe,
   },
   {
     title: "Pro Features",
     description: "Session history, custom denominations, and more with Nota Pro. Unlock the full potential.",
+    icon: Sparkles,
   },
 ];
 
@@ -90,6 +94,7 @@ export default function Home() {
               key={feature.title}
               className="p-8 rounded-2xl bg-[#121212] border border-[#262626] relative overflow-hidden group"
             >
+              <feature.icon className="w-5 h-5 text-[#888] mb-4" />
               <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
               <p className="text-[#888] text-sm leading-relaxed">{feature.description}</p>
             </div>
